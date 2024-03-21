@@ -1,0 +1,272 @@
+<!-- Project Information Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Info</title>
+</head>
+<body>
+    <header>
+        <h1>Project Info</h1>
+        <section class="Heading">
+             <li><h3><a href="#Theory"> SRS</a></h3></li>
+                <li><a href="#Diagram"><h3>Diagram</h3></a></li>
+                <li><a href="index.html"><h3>Project</h3></a></li>
+        </section>
+    </header>
+    <main>
+ <section class="Theory" id="Theory">
+      <u>  <h1>Software Requirements Specification (SRS)
+        Online Exam Management System</h1></u>
+  <ol type="1">
+    <h2>
+    <li><h2>Introduction</h2>
+    <p>The Online Exam Management System is a web-based application designed to streamline the process of conducting and managing exams online. This system provides a platform for administrators to create, schedule, administer, and evaluate exams, while allowing students to take exams remotely from any location with internet access.</p></li>
+    <li><h2>Scope</h2><p>The Online Exam Management System encompasses the following functionalities:
+        <ul>
+            <li>User Authentication: Users should be able to authenticate themselves securely to access the system.</li>
+            <li>User Roles: The system supports different user roles such as administrators, instructors, and students, each with specific privileges.</li>
+                <li>Exam Creation: Administrators and instructors can create exams, define question banks, set time limits, and specify other parameters.</li>
+                <li>Exam Scheduling: Exams can be scheduled for specific dates and times, with options for recurring exams and custom scheduling.</li>
+                <li>Exam Administration: Instructors can monitor exam sessions, view real-time progress, and intervene if necessary.</li>
+                <li>Exam Taking: Students can access exams during scheduled times, answer questions, and submit their responses within the allocated time.</li>
+                <li>Grading and Evaluation: Instructors can evaluate exam responses, assign grades, and provide feedback to students.</li>
+                <li>Reporting and Analytics: Comprehensive reporting features allow administrators and instructors to analyze exam results, track performance trends, and identify areas for improvement.</li>
+        </ul>
+    </p></li>
+
+    <li>
+     <h2>Functional Requirements</h2>
+         <ol type="a">
+            <li>
+                <h3> User Management</h3> 
+                <ul>
+                    <li>
+                        The system shall provide authentication mechanisms for users to log in securely. </li>
+                         <li>Users shall be able to register for new accounts and reset their passwords if forgotten.</li>
+                         <li>Different user roles (administrator, instructor, student) shall have specific permissions and access levels.</li>
+                        </ul>
+                    </li>
+
+                    <li><h3>Exam Management</h3>
+                        <ul>
+                        <li>Administrators and instructors shall be able to create exams, specifying details such as title, duration, instructions, and question format.</li>
+                        <li>Question banks shall allow the storage and categorization of questions for reuse in multiple exams.</li>
+                        <li>Exams may consist of various question types, including multiple-choice, true/false, short answer, and essay questions.</li>
+                        <li>Instructors shall be able to schedule exams, defining start and end times, duration, and any special instructions.
+                        </li>
+                       </ul>
+                    </li>
+
+                    <li><h3>Exam Administration</h3>
+                        <ul>
+                        <li>Administrators and instructors shall be able to create exams, specifying details such as title, duration, instructions, and question format.</li>
+                        <li>Question banks shall allow the storage and categorization of questions for reuse in multiple exams.</li>
+                        <li>Exams may consist of various question types, including multiple-choice, true/false, short answer, and essay questions.</li>
+                        <li>Instructors shall be able to schedule exams, defining start and end times, duration, and any special instructions.
+                        </li>
+                       </ul>
+                    </li>
+
+
+                    <li><h3>Exam Administration</h3>
+                        <ul>
+                        <li>Instructors shall have access to a dashboard to monitor ongoing exam sessions, view student progress, and intervene if necessary.</li>
+                        <li>Proctoring features may include monitoring of webcam feeds, screen sharing, and flagging suspicious behavior.</li>
+                        <li>The system shall support the ability to pause or extend exam sessions if required.</li>
+                       </ul>
+                    </li>
+
+                    <li><h3>Exam Taking</h3>
+                        <ul>
+                        <li>Students shall be able to access exams during scheduled times via the web interface.</li>
+                        <li>Exams shall be presented in a user-friendly format, with navigation controls and options to save and review answers.</li>
+                        <li>The system shall enforce time limits for exams and automatically submit responses upon expiration.</li>
+                        <li>Students shall receive confirmation upon successful submission of their exam.
+                        </li>
+                       </ul>
+                    </li>
+                    <li><h3>Grading and Evaluation</h3>
+                        <ul>
+                        <li>Instructors shall have access to tools for grading exam responses, including rubrics and scoring guides.</li>
+                        <li>Automated grading shall be available for certain question types, with manual override capabilities.</li>
+                        <li>Instructors shall be able to provide feedback and annotations on student submissions.</li>
+                        <li>The system shall calculate and record grades, which students can view after grading is completed.
+                        </li>
+                       </ul>
+                    </li>
+
+                    <li><h3>Reporting and Analytics</h3>
+                        <ul>
+                        <li>Instructors shall have access to tools for grading exam responses, including rubrics and scoring guides.</li>
+                        <li>Administrators and instructors shall have access to various reports on exam results, including individual student performance, class averages, and item analysis.</li>
+                        <li>Analytical tools shall allow for trend analysis, comparison of results across exams, and identification of areas for improvement.</li>
+                        <li>Reports shall be exportable in common formats such as PDF and CSV.
+                        </li>
+                       </ul>
+                    </li>
+
+                </ol>
+            </li>
+
+            <li>
+                <h2>Non-Functional Requirements</h2>
+                    <ol type="a">
+                       <li>
+                           <h3> Usability</h3> 
+                           <ul>
+                               <li>
+                                The system shall have an intuitive user interface, with clear navigation and instructions for users of all levels.
+                                  </li>
+                                    <li>Response times for system actions (e.g., loading exams, submitting answers) shall be optimized to ensure a seamless user experience.</li>
+                               </li>
+                             </ul>
+                          
+           
+                               <li><h3>Security</h3>
+                                   <ul>
+                                   <li> User authentication and data transmission shall be encrypted to ensure the security and privacy of user information.</li>
+                                   <li>Access controls shall be implemented to prevent unauthorized access to exams, questions, and grading information.</li>
+                                   <li>Proctoring features shall adhere to privacy regulations and best practices.</li>
+                                   
+                                  </ul>
+                               </li>
+           
+                               <li><h3>Performance</h3>
+                                   <ul>
+                                   <li> The system shall be scalable to accommodate a large number of concurrent users during peak exam periods.
+                                    </li>
+                                   <li>Database operations shall be optimized to minimize latency and ensure responsive performance.</li>
+                                   <li>Backup and recovery mechanisms shall be in place to protect against data loss and ensure system availability.</li>
+                                  </ul>
+                               </li>
+           
+           
+                               <li><h3>Reliability</h3>
+                                   <ul>
+                                   <li>The system shall be available 24/7, with minimal downtime for maintenance and updates.</li>
+                                   <li>Error handling mechanisms shall be implemented to gracefully handle unexpected failures and prevent data corruption.</li>
+                                  </ul>
+                                </li>
+                            </ol>
+                       </li>
+                         <li><h2>Glossary</h2>
+                        <ul><li>
+                            Administrator: A user with full control over the system, responsible for managing users, exams, and other system settings.
+                        </li>
+                         <li>Instructor: A user with permissions to create, schedule, and administer exams.</li>
+                         <li>Student: A user who takes exams administered through the system.</li>
+                         <li> Question Bank: A repository of questions categorized by topic or type, used for creating exams.</li>
+                         <li>Proctoring: Supervision and monitoring of exam sessions to prevent cheating and ensure exam integrity.</li>
+                        </ul>
+                    </li>     
+                    <li><h2> Conclusion</h2>
+                        <p>The Online Exam Management System provides a comprehensive solution for conducting exams online, offering features for exam creation, scheduling, administration, grading, and reporting. By leveraging modern web technologies and secure authentication mechanisms, the system aims to enhance the efficiency, security, and accessibility of the exam management process for administrators, instructors, and students alike.</p>
+                    </li>       
+           
+                    </ol>
+               </li>
+         </ol></h2>
+    </li>
+</section>
+<br>
+<section class="Diagram" id="Diagram">
+    <h1 >Diagram</h1>
+   <h4> <b>
+    <ol type="1">
+        <li>
+<section>
+    <h4>Class Diagram</h4>
+     <img src="assets/Class-Diagram.jpeg" alt="Class-Diagram">
+</section></li>
+<li>
+<section>
+    <h4>Activity Diagram</h4>
+     <img src="assets/Activity-Diagram.jpeg" alt="Activity-Diagram">
+</section></li>
+<li>
+<section>
+    <h4>Use Case Diagram</h4>
+     <img src="assets/Use-Case-Diagram.jpeg" alt="Use-Case-Diagram">
+</section>
+<li>
+<section>
+    <h4>Data Flow Diagram(DFD) Level 1</h4>
+     <img src="assets/DATA-FLOW -DIAGRAM(DFD)- LEVEL-1.jpeg" alt="DATA-FLOW-DIAGRAM 1">
+</section></li>
+<li>
+<section>
+    <h4>Data Flow Diagram(DFD) Level 2</h4>
+     <img src="assets/DATA-FLOW-DIAGRAM(DFD)-LEVEL-2.jpeg" alt="DATA-FLOW-DIAGRAM 2">
+</section></li>
+<li>
+<section>
+    <h4>Sequence Diagram</h4>
+     <img src="assets/SEQUENCE DIAGRAM.jpeg" alt="Sequence Diagram">
+</section></li>
+
+</ol></b></h4>
+</section>
+ </main>
+    <footer>
+        <p>(Online Exam Management System) Software Engineering Project of Group 20 </p>
+        <p> Shreya Jaiswal --C41  Sucharita Jalui --B53 Mitrajit Ghosh --C27 Soumyajeet Das --B48</p>
+    </footer>
+</body>
+<style>
+        body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #cccaca;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.Heading{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+}
+main {
+    padding: 100px;
+}
+.Theory {
+    margin: 0 auto;
+    border: 2px;
+    max-width: fit-content;
+    border: solid 4px;
+}
+.Diagram{
+    max-width: 100%;
+    height: 100%;
+    border: solid 4px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+h4
+{
+    font-size: 30px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+</style>
+</html>
+
+
